@@ -8,18 +8,12 @@ body {
     user-drag: none;
     cursor: grab;
     float: left;
-    /* position: absolute; */
     width: 100%;
     min-height: 150px;
-    top: 0;
-    left: 0;
 }
 
 #flex {
-    /* display: flex; */
-    /* justify-content: center; */
     margin: 5rem;
-    /* padding: 0 5rem; */
 }
 #container, #rotator {
     transform: scale(1);
@@ -216,6 +210,10 @@ h1 i {
     position: absolute;
     bottom: 0;
     right: 3rem;
+    bottom: 0;
+    right: 3rem;
+    z-index: 99999;
+    transform: translateZ(100px);
 }
 #content #links a:hover {
     text-decoration: underline;
@@ -251,4 +249,18 @@ h1 i {
 
 #content > h1 {
     display: none;
+}
+
+@media screen and (max-width: 900px) {
+    #slide-text > #text {
+        display: none;
+    }
+    #slide-text {
+        left: 2rem;
+        top: 2rem;
+    }
+    #container {
+        top: 0;
+        left: 0;
+    }
 }
