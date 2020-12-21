@@ -161,7 +161,7 @@ body {
 }
 
 #content {
-    z-index: 9999;
+    z-index: 9999999;
     position: absolute;
     right: 0;
     top: 0;
@@ -241,6 +241,7 @@ h1 i {
     left: 600px;
     user-select: none;
     color: #2f2106;
+    z-index: 9999999;
     font-family: 'Abril Fatface';
     font-size: 4rem;
     text-shadow: 5px 5px 0 #faa43500;
@@ -259,8 +260,11 @@ h1 i {
         left: 2rem;
         top: 2rem;
     }
-    #container {
-        top: 0;
-        left: 0;
+    #container, #rotator {
+        top: 5rem;
+        left: -4rem;
+    }
+    #flex {
+        transform: scale(0.5);
     }
 }
